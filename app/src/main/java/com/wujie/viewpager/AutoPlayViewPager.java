@@ -38,7 +38,7 @@ public class AutoPlayViewPager extends ViewPager{
 
     public void start() {
         stop();
-        postDelayed(player,showTime)
+        postDelayed(player,showTime);
     }
 
     public void stop () {
