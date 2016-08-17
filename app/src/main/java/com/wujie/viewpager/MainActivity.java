@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         autoPlayViewPager.setAdapter(bannerAdapter);
 
 
+
+
         autoPlayViewPager.setDirection(AutoPlayViewPager.Direction.LEFT);// 设置播放方向
         autoPlayViewPager.setCurrentItem(200); // 设置每个Item展示的时间
         autoPlayViewPager.start();

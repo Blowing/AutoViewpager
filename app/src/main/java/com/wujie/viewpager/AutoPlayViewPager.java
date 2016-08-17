@@ -14,6 +14,16 @@ public class AutoPlayViewPager extends ViewPager{
 
     }
 
+    @Override
+    public void setCurrentItem(int item) {
+        super.setCurrentItem(item);
+    }
+
+    @Override
+    public void addOnPageChangeListener(OnPageChangeListener listener) {
+        super.addOnPageChangeListener(listener);
+    }
+
     public AutoPlayViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -75,10 +85,11 @@ public class AutoPlayViewPager extends ViewPager{
                         currentItem = count;
                     }
                     break;
-                setCurrentItem(currentItem);
             }
-            start();
+
+            setCurrentItem(currentItem);
         }
+        start();
 
     }
 
