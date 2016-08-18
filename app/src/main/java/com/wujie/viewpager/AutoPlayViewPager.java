@@ -105,10 +105,12 @@ public class AutoPlayViewPager extends ViewPager{
         RIGHT
     }
 
+
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        addOnPageChangeListenr(new OnPageChangeListener() {
+        addOnPageChangeListener(new OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
